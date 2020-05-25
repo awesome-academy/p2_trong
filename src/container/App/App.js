@@ -19,7 +19,7 @@ function App() {
   const user = useSelector((state) => state.user);
   useEffect(() => {
     dispatch(checkStorage());
-  }, []);
+  }, [dispatch]);
   useEffect(() => {
     if (user.ready) {
       setStatus(user.status);
@@ -57,7 +57,7 @@ function App() {
       </Switch>
     );
     return result;
-  }, [type]);
+  }, []);
   const loadPage = () => {
     return (
       <>

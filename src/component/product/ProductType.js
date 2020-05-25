@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useHistory } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 
@@ -6,9 +6,6 @@ const ProductType = ({type,setType}) => {
     const { t } = useTranslation();
     const listType = ["Chivas", "Johnnie Walker", "Whisky", "Glenmorangie"];
     const history = useHistory();
-    useEffect(() => {
-        setType(type);
-    }, [type]);
     const onHandleChange = (event) => {
         let target = event.target;
         setType(target.value)

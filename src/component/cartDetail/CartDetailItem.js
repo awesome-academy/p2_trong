@@ -12,7 +12,7 @@ const CartDetailItem = ({onHandleDeleteCart,cart,updateCart,dispatch}) => {
         if(typeof cart.NumberOfProducts !== 'undefined'){
             setMax(cart.NumberOfProducts)
         }
-    }, [cart]);
+    }, [cart,setCount,setMax]);
     useEffect(() => {
         if(cart.amount!== count){
             dispatch(updateCart({

@@ -16,8 +16,7 @@ const ListOrder = () => {
     }, [user])
     const getOrder = async id =>{
         const data= await getlistOrder(id)
-        const order = data.reverse();
-        setListOrder(order);
+        setListOrder(data);
     }
     return (
         <section className="order">

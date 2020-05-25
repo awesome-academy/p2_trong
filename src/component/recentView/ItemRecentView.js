@@ -7,7 +7,7 @@ const ItemRecentView = ({wine}) => {
     const { t } = useTranslation();
     return (
         <div className="productRow__item">
-            <div className="productRow__item-img"> <img src={process.env.PUBLIC_URL +wine.Img} /></div>
+            <div className="productRow__item-img"> <img src={process.env.PUBLIC_URL +wine.Img} alt="" /></div>
             <div className="productRow__item-info">
                 <p className="productRow__item-name">{wine.Name}</p>
                 <p className="productRow__item-price">{wine.Price.toFixed(3)}<span>đ</span></p>
