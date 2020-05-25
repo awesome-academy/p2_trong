@@ -347,7 +347,6 @@
                     height: $px292;
                     width: $px92;
                 }
-                
             }
             &-info{
                 width: 26.17vw;
@@ -356,7 +355,6 @@
                 font-size: $r-2-5;
                 text-transform: uppercase;
                 margin-bottom: $px15;
-                    
             }
             &-price{
                 position: relative;
@@ -368,8 +366,8 @@
                         font-size: $r-1-6;
                         top: 0;
                         left: 103%;
-                        
-                    }       
+
+                    }
             }
             &-content{
                 color: $color-gray;
@@ -381,13 +379,14 @@
                 display: flex;
                 margin-top: $px27;
                 align-items: center;
-                button{
+                a{
                     border: none;
                     background-color: $color-black;
                     color: $color-white;
                     font-size: $r-1-2;
-                    text-transform: uppercase;
+                    text-transform: capitalize;
                     padding: $px5 $px10;
+                    letter-spacing: 1px;
                     &:hover{
                         background-color: $color-gold;
                     }
@@ -399,6 +398,14 @@
                     span{
                         margin-left: $px8;
                     }
+                }
+            }
+            &-start{
+                margin-top: $px10;
+                span{
+                    font-size: $r-1-7;
+                    text-transform: capitalize;
+                    color: $color-smokegrey;
                 }
             }
 

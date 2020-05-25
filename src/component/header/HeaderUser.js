@@ -16,7 +16,7 @@ const HeaderUser = ({user,carts}) => {
         if(user.status){
             dispatch(fetchCart(user.data.Cart))
         }
-    }, [user]);
+    }, [user,dispatch]);
     const showUser = () => {
         if(user.status){
             return (

@@ -5,7 +5,6 @@ const Rating = (score,setScore) => {
     return (
         <StarRatings
             rating={score}
-            starRatedColor="blue"
             changeRating={(newScore)=> setScore(newScore)}
             numberOfStars={5}
             name='rating'

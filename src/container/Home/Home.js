@@ -13,9 +13,9 @@ const Home = () => {
     const dispatch= useDispatch();
     const { t } = useTranslation();
     useEffect(() => {
-        if(typeof user.Type === 'undefined'){
+        if( user.Type !== 'admin'){
             dispatch(fetchHotTrendWine());
-        dispatch(fetchNewWine())
+            dispatch(fetchNewWine())
         if(window.innerWidth >=1092){
             addSlide();
         }
@@ -180,7 +180,7 @@ const Home = () => {
                         <p className="introduce__title"> {t('common.customer')} </p><img className="introduce__sub" src="img/title-dark.png" />
                         <p className="customer__icon"> <i className="fas fa-quote-right"> </i></p>
                         <div className="customer__img"> <img src="./img/timthumb (2).jpg" /></div>
-                        <p className="customer__name"> {t('common.GiangLe')} </p>
+                        <p className="customer__name"> {t('common.Giangle')} </p>
                         <p className="customer__sub"> {t('common.graphicD')} </p>
                     </div>
                 </div>
